@@ -3,36 +3,61 @@
 <head>
   <title>Etsy Project</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="scss/main.scss">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<div class="containerhead">
-<h1>Etsy</h1>
-<div><input class="searchbar"></input></div>
-<div><button class ="searchbutton">Search</button></div>
-<ul class="rightheader">
-  <li>Sell on Etsy</li>
-  <li>Register</li>
-  <li><button>Sign in</button></li>
-</ul>
-<ul class="cartbutton">
-  <li>Cart</li>
-</ul>
-<ul class="departments">
-  <li>Clothing &amp; Accessories,</li>
-  <li>Jewelry</li>
-  <li>Craft Supplies &amp; Tools</li>
-  <li>Weddings</li>
-  <li>Entertainment</li>
-  <li>Home &amp; Living</li>
-  <li>Kids &amp; Baby</li>
-  <li>Vintage</li>
-</ul>
-</div>
-
-
-
 
 <body>
+
+<!-- Left Header -->
+  <header class="containerhead">
+    <h1>Etsy</h1>
+    <span><input class="searchbar"></input></span>
+    <button class ="searchbutton">Search</button>
+    
+<!-- Right Header -->
+    <ul class="rightheader">
+      <li class="sell">Sell on Etsy</li>
+      <li class="reg">Register</li>
+      <li class="btn"><button>Sign in</button></li>
+    </ul>
+   
+      <span class="cartButton">Cart</span>
+<div class="depList">
+    <ul class="departments">
+      <li>Clothing &amp; Accessories</li>
+      <li>Jewelry</li>
+      <li>Craft Supplies &amp; Tools</li>
+      <li>Weddings</li>
+      <li>Entertainment</li>
+      <li>Home &amp; Living</li>
+      <li>Kids &amp; Baby</li>
+      <li>Vintage</li>
+    </ul>
+</div>
+</header>
+
+<div class="showResultsfor">Show results for:
+  <ul class="sideBar">
+     <li class="allCategories">All Categories</li>
+     <li>Clothing</li>
+     <li>Art &amp; Collectibles</li>
+     <li>Accessories</li>
+     <li>Home &amp; Living</li>
+     <li>Jewelry</li>
+     <li>Craft Supplies &amp; Tools</li>
+     <li>Toys &amp; Games</li>
+     <li>Bath &amp; Beauty</li>
+     <li>Paper &amp; Party Supplies</li>
+     <li>Weddings</li>
+     <li>Bags &amp; Purses</li>
+     <li>Pet Supplies</li>
+     <li>Shoes</li>
+     <li>Electronics &amp; Accessories</li>
+     <li>Books, Movies &amp; Music</li>
+     </ul>
+  </div>
+
 
   <script type="/bower_components/underscore/underscore.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>

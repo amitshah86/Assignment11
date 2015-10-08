@@ -1,28 +1,70 @@
-h1 {
-  color: #F56300;
-  margin-left: 150px;
-  display: inline-block; }
+.containerhead {
+  height: 150px; }
+  .containerhead h1 {
+    color: #F56300;
+    margin-left: 150px;
+    display: inline-block; }
+  .containerhead .searchbar {
+    height: 30px;
+    width: 255px;
+    padding-left: 20px;
+    margin-left: 30px; }
+  .containerhead .divblock {
+    display: inline-block; }
+  .containerhead .searchbutton {
+    background-color: #40A7C7;
+    color: white;
+    padding-right: 10px;
+    padding-left: 5px;
+    height: 35px;
+    margin-left: -5px; }
+  .containerhead .searchbutton:hover {
+    background-color: white; }
+  .containerhead .rightheader {
+    display: inline-block;
+    margin-left: 150px;
+    color: #40B0DC; }
+  .containerhead .rightheader li {
+    display: inline-block;
+    margin-left: 20px;
+    height: 42px; }
+  .containerhead .sell {
+    padding-left: 20px;
+    margin-left: 20px; }
+  .containerhead button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: white;
+    padding: 6px; }
+  .containerhead .cartButton {
+    padding-left: 20px;
+    color: gray; }
+  .containerhead .departments {
+    list-style: none;
+    display: inline-block;
+    color: gray;
+    padding-left: 142px;
+    font-size: 15px; }
+  .containerhead .departments li {
+    display: inline-block;
+    padding-left: 10px; }
 
-div {
-  display: inline-block; }
+.depList {
+  width: 100%;
+  border-top: 1px solid gray; }
 
-.searchbar {
-  margin-left: 10px;
-  height: 30px;
-  width: 255px;
-  padding-left: 20px; }
+.sideBar {
+  list-style: none;
+  width: 200px;
+  border: 1px solid gray;
+  color: #1E92C8; }
 
-.divblock {
-  display: inline-block; }
+.allCategories {
+  font-style: bold;
+  color: #555555;
+  padding-bottom: 8px; }
 
-.searchbutton {
-  background-color: #40A7C7;
-  color: white;
-  padding-right: 10px;
-  padding-left: 10px; }
-
-.rightheader {
-  display: inline-block; }
-
-.rightheader li {
-  display: inline-block; }
+.showResultsfor {
+  display: inline-block;
+  padding-left: 152px;
+  padding-top: 25px; }
