@@ -1,0 +1,28 @@
+h1 {
+  color: #F56300;
+  margin-left: 150px;
+  display: inline-block; }
+
+div {
+  display: inline-block; }
+
+.searchbar {
+  margin-left: 10px;
+  height: 30px;
+  width: 255px;
+  padding-left: 20px; }
+
+.divblock {
+  display: inline-block; }
+
+.searchbutton {
+  background-color: #40A7C7;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.rightheader {
+  display: inline-block; }
+
+.rightheader li {
+  display: inline-block; }
