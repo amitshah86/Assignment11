@@ -1,3 +1,6 @@
+body {
+  background-color: #F5F5F1; }
+
 .containerhead {
   height: 150px; }
   .containerhead h1 {
@@ -20,14 +23,17 @@
     margin-left: -5px; }
   .containerhead .searchbutton:hover {
     background-color: white; }
-  .containerhead .rightheader {
+  .containerhead .rightHeader {
     display: inline-block;
     margin-left: 150px;
     color: #40B0DC; }
-  .containerhead .rightheader li {
+  .containerhead .rightHeader li {
     display: inline-block;
     margin-left: 20px;
-    height: 42px; }
+    height: 42px;
+    cursor: pointer; }
+    .containerhead .rightHeader li:hover {
+      text-decoration: underline; }
   .containerhead .sell {
     padding-left: 20px;
     margin-left: 20px; }
@@ -38,16 +44,22 @@
     padding: 6px; }
   .containerhead .cartButton {
     padding-left: 20px;
-    color: gray; }
+    color: gray;
+    cursor: pointer; }
+    .containerhead .cartButton:hover {
+      text-decoration: underline; }
   .containerhead .departments {
     list-style: none;
     display: inline-block;
     color: gray;
     padding-left: 142px;
-    font-size: 15px; }
+    font-size: 15px;
+    cursor: pointer; }
   .containerhead .departments li {
     display: inline-block;
     padding-left: 10px; }
+    .containerhead .departments li:hover {
+      text-decoration: underline; }
 
 .depList {
   width: 100%;
@@ -57,14 +69,89 @@
   list-style: none;
   width: 200px;
   border: 1px solid gray;
-  color: #1E92C8; }
+  color: #1E92C8;
+  background-color: white;
+  padding: 21px;
+  height: 350px; }
+
+.sideBar li {
+  padding: 4px;
+  font-size: 13px;
+  cursor: pointer; }
+  .sideBar li:hover {
+    text-decoration: underline; }
 
 .allCategories {
-  font-style: bold;
   color: #555555;
   padding-bottom: 8px; }
+
+.allCategories li {
+  font-size: 16px; }
 
 .showResultsfor {
   display: inline-block;
   padding-left: 152px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  color: #555555; }
+
+.refineyoursearch {
+  margin-left: 150px; }
+
+.sideBar2 {
+  display: inline-block;
+  list-style: none;
+  border: 1px solid gray;
+  height: 500px;
+  width: 220px;
+  padding-left: 23px;
+  margin-left: 152px;
+  margin-top: 25px;
+  color: #40B0DC;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer; }
+
+.sideBar2 li:hover {
+  padding-left: 20px; }
+
+.itemType {
+  color: #555555; }
+
+.allItems {
+  padding-left: 20px;
+  font-size: 13px; }
+  .allItems:hover {
+    text-decoration: underline; }
+
+.handMade {
+  font-size: 13px;
+  padding-left: 20px; }
+  .handMade:hover {
+    text-decoration: underline; }
+
+.vintage {
+  font-size: 13px;
+  padding-left: 20px; }
+  .vintage:hover {
+    text-decoration: underline; }
+
+.price {
+  padding-top: 40px; }
+
+.priceBoxlow {
+  width: 50px;
+  height: 30px; }
+
+.priceBoxhigh {
+  width: 50px;
+  height: 30px;
+  margin-left: 25px; }
+
+.to {
+  margin-left: 65px;
+  display: inline-block; }
+
+.submitbtn {
+  width: 50px;
+  height: 50px;
+  margin-left: 72px; }
