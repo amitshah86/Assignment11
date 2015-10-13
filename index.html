@@ -10,33 +10,35 @@
 <body>
 
 <!-- Left Header -->
-  <header class="containerhead">
-    <h1>Etsy</h1>
-    <span><input class="searchbar"></input></span>
-    <button class ="searchbutton">Search</button>
+<header class="containerhead">
+  <h1>Etsy</h1>
+  <span><input class="searchbar"></input></span>
+  <button class ="searchbutton">Search</button>
     
-<!-- Right Header -->
-    <ul class="rightHeader">
-      <li class="sell">Sell on Etsy</li>
-      <li class="reg">Register</li>
-      <li class="btn"><button>Sign in</button></li>
-    </ul>
+  <!-- Right Header -->
+  <ul class="rightHeader">
+    <li class="sell">Sell on Etsy</li>
+    <li class="reg">Register</li>
+    <li class="btn"><button>Sign in</button></li>
+  </ul>
    
-      <span class="cartButton">Cart</span>
-<div class="depList">
-    <ul class="departments">
-      <li>Clothing &amp; Accessories</li>
-      <li>Jewelry</li>
-      <li>Craft Supplies &amp; Tools</li>
-      <li>Weddings</li>
-      <li>Entertainment</li>
-      <li>Home &amp; Living</li>
-      <li>Kids &amp; Baby</li>
-      <li>Vintage</li>
-    </ul>
-</div>
+  <span class="cartButton">Cart</span>
+  <div class="depList">
+      <ul class="departments">
+        <li>Clothing &amp; Accessories</li>
+        <li>Jewelry</li>
+        <li>Craft Supplies &amp; Tools</li>
+        <li>Weddings</li>
+        <li>Entertainment</li>
+        <li>Home &amp; Living</li>
+        <li>Kids &amp; Baby</li>
+        <li>Vintage</li>
+      </ul>
+  </div>
 </header>
 
+<div class="leftContainer">
+  <!-- Sidebars in Here -->
 <div class="showResultsfor">Show results for:
   <ul class="sideBar">
      <li class="allCategories">All Categories</li>
@@ -55,47 +57,62 @@
      <li>Shoes</li>
      <li>Electronics &amp; Accessories</li>
      <li>Books, Movies &amp; Music</li>
-     </ul>
-  </div>
+   </ul>
+</div>
 
   <div class="refineyoursearch">Refine your search</div>
-    <ul class="sideBar2">
-      <li class="itemType">Item Type</li>
-      <div class="radio">
-     <input type="radio"><li class="allItems">All Items</li>
-     <input type="radio"><li class="handMade">Handmade</li>
+  <ul class="sideBar2">
+    <li class="itemType">Item Type</li>
+    <div class="radio">
+      <input type="radio"><li class="allItems">All Items</li>
+      <input type="radio"><li class="handMade">Handmade</li>
       <input type="radio"><li class="vintage">Vintage</li>
-      </div> 
+    </div> 
+    
     <div class="price">Price</div>
-    <span><input placeholder="Low" class="priceBoxlow"></input></span>
-    <span><input placeholder="High" class="priceBoxhigh"></input></span>
+    <span>
+      <input placeholder="Low" class="priceBoxlow"></input>
+    </span>
+    <span>
+      <input placeholder="High" class="priceBoxhigh"></input>
+    </span>
     <div class="to">to</div>
-    <span><button class="submitbtn"></button></span>
+    <span>
+      <button class="submitbtn"></button>
+    </span>
+  </ul>
+</div>
+
+<div class="rightContainer">
+  <!-- Results in Here -->
+</div>
+
+
+
+<!-- TEMPLATE -->
+<script type="text/template" id="itemTemplate">
+  <div class="whater">
+    <img src="<%= Images[0].url_75x75 %>">
+    <ul>
+      <li class="Price"><%= price %></li>
+      <li><%= currency_code %></li>
+      <li><%= title %></li>
+      <li><%= Shop.shop_name  %></li>
     </ul>
-  <script type="/bower_components/underscore/underscore.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-
-<div class="containerBody">
-  <script type="text/template" id="itemTemplate">
-
-<div class="picture">
-<ul class="textData">
-   <li class="itemTitle"><%=title=></li>
-   <li class="companyName"><%=/li\>
-   <li class="priceValue"><%=price=></li>
-   <li class="currency">=>%</li>
-
-
-
-<li class=‘xxx’> <%= ……=></li>
-
-
-
-</ul>
-</div>
+  </div>
 </script>
-</div>
+
+
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/etsydata.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+
 
 </body>
 </html>
